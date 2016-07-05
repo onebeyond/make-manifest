@@ -1,10 +1,9 @@
 var fs = require('fs')
 var path = require('path')
-var pkg = require('./package')
+var pkg = require(path.join(process.cwd(), 'package.json'))
 var merge = require('lodash.merge')
 var gitCommit = require('git-rev-sync');
 var gitRemote = require('remote-origin-url');
-
 
 module.exports = function(extra) {
     var manifest = merge({
