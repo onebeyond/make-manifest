@@ -1,6 +1,6 @@
 {
   "name": "make-manifest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
   "bin": {
@@ -10,12 +10,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-      "generate",
-      "manifest",
-      "git",
-      "commit",
-      "remote",
-      "origin"
+    "generate",
+    "manifest",
+    "git",
+    "commit",
+    "remote",
+    "origin"
   ],
   "author": "GuideSmiths Ltd",
   "license": "ISC",
