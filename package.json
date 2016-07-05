@@ -3,10 +3,20 @@
   "version": "0.1.0",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
-  "bin": "./bin/make-manifest",
+  "bin": {
+    "make-manifest": "./bin/make-manifest"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+      "generate",
+      "manifest",
+      "git",
+      "commit",
+      "remote",
+      "origin"
+  ],
   "author": "GuideSmiths Ltd",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +24,14 @@
     "git-rev-sync": "^1.6.0",
     "lodash.merge": "^4.4.0",
     "remote-origin-url": "^0.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidesmiths/make-manifest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guidesmiths/make-manifest/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/make-manifest#readme"
 }
