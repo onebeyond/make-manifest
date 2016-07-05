@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+var makeManifest = require('../')
+
+function collect(value, memo) {
+    var values = value.split(/\s*:\s*/)
+    memo[values[0]] = values[1]
+    return memo;
+}
+
+program
+  .version('0.0.1')
+  .option('-x --extra [string]', 'colon separated key value pair', collect, {})
+  .parse(process.argv);
+
+makeManifest(program.extra, function(err) {
+    if (err) throw err
+})
