@@ -5,7 +5,7 @@ var makeManifest = require('../')
 
 function collect(value, memo) {
     var values = value.split(/\s*:\s*/)
-    memo[values[0]] = values[1]
+    memo[values[0]] = values.splice(1).join(':')
     return memo;
 }
 
