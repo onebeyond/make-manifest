@@ -10,9 +10,11 @@ module.exports = function(extra) {
         name: pkg.name,
         version: pkg.version,
         timestamp: new Date().toISOString(),
-        remote: gitRemote.sync(),
-        branch: gitCommit.branch(),
-        commit: gitCommit.long()
+        scm: {
+            remote: gitRemote.sync(),
+            branch: gitCommit.branch(),
+            commit: gitCommit.long()
+        }
     }, extra)
     fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, 2) + '\n', 'utf-8')
 }
