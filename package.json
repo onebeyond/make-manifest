@@ -7,7 +7,9 @@
     "make-manifest": "./bin/make-manifest"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "precommit": "npm run lint"
   },
   "keywords": [
     "generate",
@@ -25,7 +27,11 @@
     "lodash.merge": "^4.4.0",
     "remote-origin-url": "^0.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^0.11.6",
+    "eslint": "^0.23.0",
+    "eslint-config-imperative": "0.0.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guidesmiths/make-manifest.git"
