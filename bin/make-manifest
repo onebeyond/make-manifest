@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 var program = require('commander')
+var set = require('lodash.set')
+var reduce = require('lodash.reduce')
 var makeManifest = require('../')
 
 function collect(value, memo) {
@@ -14,6 +16,11 @@ program
   .option('-x --extra [string]', 'colon separated key value pair', collect, {})
   .parse(process.argv);
 
-makeManifest(program.extra, function(err) {
+makeManifest(reduce(program.extra, toNestedObject, {}), function(err) {
     if (err) throw err
 })
+
+function toNestedObject(memo, value, key) {
+    set(memo, key, value)
+    return memo
+}

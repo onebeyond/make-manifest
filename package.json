@@ -25,6 +25,8 @@
     "commander": "^2.9.0",
     "git-rev-sync": "^1.6.0",
     "lodash.merge": "^4.4.0",
+    "lodash.reduce": "^4.5.0",
+    "lodash.set": "^4.3.0",
     "remote-origin-url": "^0.5.1"
   },
   "devDependencies": {
