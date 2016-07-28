@@ -5,9 +5,11 @@ Generates a manfiest.json similar to...
   "name": "make-manifest",
   "version": "0.1.0",
   "timestamp": "2016-07-05T00:21:41.308Z",
-  "remote": "git@github.com:guidesmiths/make-manifest.git",
-  "branch": "master",
-  "commit": "98d5460ad979b1b0300c6cf9fee4799abddf0ab6"
+  "scm": {
+    "remote": "git@github.com:guidesmiths/make-manifest.git",
+    "branch": "master",
+    "commit": "98d5460ad979b1b0300c6cf9fee4799abddf0ab6"
+  }
 }
 ```
 ### Why?
@@ -26,4 +28,18 @@ It's good practice to ship some basic information about your application build i
 ### Example
 ```
 ./bin/make-manifest --extra "build.url: $CIRCLE_BUILD_URL --extra 'build.number: $CIRCLE_BUILD_NUM'
+{
+  "name": "make-manifest",
+  "version": "0.1.0",
+  "timestamp": "2016-07-05T00:21:41.308Z",
+  "scm": {
+    "remote": "git@github.com:guidesmiths/make-manifest.git",
+    "branch": "master",
+    "commit": "98d5460ad979b1b0300c6cf9fee4799abddf0ab6"
+  },
+  "build": {
+    "url": "https://circleci.com/gh/guidesmiths/make-manifest/48",
+    "number": "48"
+  }
+}
 ```
