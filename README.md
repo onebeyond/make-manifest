@@ -25,5 +25,5 @@ It's good practice to ship some basic information about your application build i
 ```
 ### Example
 ```
-./bin/make-manifest --extra "build.url: $CIRCLE_BUILD_URI --extra 'build.number: $CIRCLE_BUILD_NUM'
+./bin/make-manifest --extra "build.url: $CIRCLE_BUILD_URL --extra 'build.number: $CIRCLE_BUILD_NUM'
 ```
