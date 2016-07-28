@@ -23,3 +23,7 @@ It's good practice to ship some basic information about your application build i
     -V, --version        output the version number
     -x --extra [string]  colon separated key value pair
 ```
+### Example
+```
+./bin/make-manifest --extra "build.url: $CIRCLE_BUILD_URI --extra 'build.number: $CIRCLE_BUILD_NUM'
+```
