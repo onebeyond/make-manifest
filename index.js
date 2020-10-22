@@ -8,7 +8,8 @@ module.exports = extra => {
     const { name, version } = pkg;
     let scm = {};
 
-    if( fs.existsSync(path.join(process.cwd(), '.git'))){
+    // Without commits, .git/packed-refs does not exists
+    if( fs.existsSync(path.join(process.cwd(), '.git', 'packed-refs'))){
       scm = {
         remote: gitRemote.sync(),
         branch: gitCommit.branch(),
@@ -18,5 +19,5 @@ module.exports = extra => {
 
     const timestamp = new Date().toISOString();
     const manifest = { name, version, scm, timestamp, ...extra };
-    fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, 2) + '\n', 'utf-8')
+    fs.writeFileSync('manifest.json', `${JSON.stringify(manifest, null, 2)}\n`, 'utf-8')
 }
