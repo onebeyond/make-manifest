@@ -3,12 +3,19 @@
   "version": "1.0.1",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "bin": {
     "make-manifest": "./bin/make-manifest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect",
     "precommit": "npm run lint"
   },
   "keywords": [
@@ -23,16 +30,13 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.9.0",
-    "git-rev-sync": "^1.6.0",
-    "lodash.merge": "^4.4.0",
-    "lodash.reduce": "^4.5.0",
-    "lodash.set": "^4.3.0",
+    "git-rev-sync": "^3.0.1",
+    "snyk": "^1.361.3",
     "remote-origin-url": "^0.5.1"
   },
   "devDependencies": {
-    "husky": "^0.11.6",
-    "eslint": "^0.23.0",
-    "eslint-config-imperative": "0.0.6"
+    "eslint": "^7.4.0",
+    "husky": "^0.11.6"
   },
   "repository": {
     "type": "git",
@@ -41,5 +45,6 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/make-manifest/issues"
   },
-  "homepage": "https://github.com/guidesmiths/make-manifest#readme"
+  "homepage": "https://github.com/guidesmiths/make-manifest#readme",
+  "snyk": true
 }
