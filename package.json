@@ -31,7 +31,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "git-rev-sync": "^3.0.1",
-    "snyk": "^1.361.3",
+    "snyk": "^1.685.0",
     "remote-origin-url": "^0.5.1"
   },
   "devDependencies": {
