@@ -35,8 +35,10 @@
     "remote-origin-url": "^0.5.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "eslint": "^7.4.0",
-    "husky": "^0.11.6"
+    "husky": "^0.11.9"
   },
   "repository": {
     "type": "git",
