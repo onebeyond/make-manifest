@@ -29,16 +29,16 @@
   "author": "GuideSmiths Ltd",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^8.2.0",
     "git-rev-sync": "^3.0.1",
-    "snyk": "^1.361.3",
-    "remote-origin-url": "^0.5.1"
+    "snyk": "^1.733.0",
+    "remote-origin-url": "^2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
-    "eslint": "^7.4.0",
-    "husky": "^0.11.9"
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2"
   },
   "repository": {
     "type": "git",
