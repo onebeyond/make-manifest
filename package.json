@@ -30,7 +30,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.9.0",
-    "git-rev-sync": "^3.0.1",
+    "git-rev-sync": "^3.0.2",
     "snyk": "^1.361.3",
     "remote-origin-url": "^0.5.1"
   },
