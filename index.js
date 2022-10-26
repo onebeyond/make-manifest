@@ -1,8 +1,9 @@
-const fs = require('fs')
-const path = require('path')
-const pkg = require(path.join(process.cwd(), 'package.json'))
+const fs = require('fs');
+const path = require('path');
 const gitCommit = require('git-rev-sync');
 const gitRemote = require('remote-origin-url');
+
+const pkg = require(path.join(process.cwd(), 'package.json'));
 
 module.exports = extra => {
   const { name, version } = pkg;
