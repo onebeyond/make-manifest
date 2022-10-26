@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
-    "precommit": "npm run lint"
+    "prepare": "husky install"
   },
   "keywords": [
     "generate",
@@ -39,11 +39,11 @@
   "dependencies": {
     "commander": "^2.9.0",
     "git-rev-sync": "^3.0.2",
-    "snyk": "^1.1041.0",
-    "remote-origin-url": "^0.5.1"
+    "remote-origin-url": "^0.5.1",
+    "snyk": "^1.1041.0"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
-    "husky": "^0.11.6"
+    "husky": "^7.0.0"
   }
 }
