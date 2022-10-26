@@ -1,6 +1,6 @@
 {
   "name": "make-manifest",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
   "engineStrict": true,
