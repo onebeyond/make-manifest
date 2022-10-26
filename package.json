@@ -40,7 +40,7 @@
     "commander": "^9.4.1",
     "git-rev-sync": "^3.0.2",
     "lodash": "^4.17.21",
-    "remote-origin-url": "^0.5.1",
+    "remote-origin-url": "^2.0.0",
     "snyk": "^1.1041.0"
   },
   "devDependencies": {
