@@ -12,7 +12,6 @@
     "make-manifest": "./bin/make-manifest"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "eslint .",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
@@ -28,16 +27,6 @@
   ],
   "author": "GuideSmiths Ltd",
   "license": "ISC",
-  "dependencies": {
-    "commander": "^2.9.0",
-    "git-rev-sync": "^3.0.2",
-    "snyk": "^1.1041.0",
-    "remote-origin-url": "^0.5.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.4.0",
-    "husky": "^0.11.6"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guidesmiths/make-manifest.git"
@@ -46,5 +35,15 @@
     "url": "https://github.com/guidesmiths/make-manifest/issues"
   },
   "homepage": "https://github.com/guidesmiths/make-manifest#readme",
-  "snyk": true
+  "snyk": true,
+  "dependencies": {
+    "commander": "^2.9.0",
+    "git-rev-sync": "^3.0.2",
+    "snyk": "^1.1041.0",
+    "remote-origin-url": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "husky": "^0.11.6"
+  }
 }
