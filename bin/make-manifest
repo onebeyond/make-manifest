@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const _set = require('lodash/set');
+const _set = require('lodash.set');
 const path = require('path')
 
 const makeManifest = require('../');
