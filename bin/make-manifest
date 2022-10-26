@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
-var program = require('commander')
-var makeManifest = require('../')
+const program = require('commander');
+const _set = require('lodash/set');
+const makeManifest = require('../');
 
 const collect = (value, memo) => {
-    const values = value.split(/\s*:\s*/)
-    memo[values[0]] = values.splice(1).join(':')
-    return memo;
+  const values = value.split(/\s*:\s*/);
+ return _set(memo, values[0], values[1]);
 }
 
 program
   .version('0.0.1')
-  .option('-x --extra [string]', 'colon separated key value pair', collect, {})
+  .option('-x, --extra [string]', 'colon separated key value pair', collect, {})
   .parse(process.argv);
 
-const extraArguments = { ...program.extra };
+program.parse();
+const options = program.opts();
 
-makeManifest(extraArguments)
+makeManifest(options.extra);
