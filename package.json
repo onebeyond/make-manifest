@@ -1,12 +1,12 @@
 {
   "name": "make-manifest",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
   "engineStrict": true,
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=14",
+    "npm": ">=6"
   },
   "bin": {
     "make-manifest": "./bin/make-manifest"
