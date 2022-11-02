@@ -9,7 +9,7 @@ const pkg = require(path.join(process.cwd(), 'package.json'))
 
 const collect = (value, memo) => {
   const [key, ...rest] = value.split(':');
-  return _set(memo, key, rest.join(':'));
+  return _set(memo, key.trim(), rest.join(':').trim());
 }
 
 program
