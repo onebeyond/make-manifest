@@ -41,7 +41,7 @@
     "git-rev-sync": "^3.0.2",
     "lodash.set": "^4.3.2",
     "remote-origin-url": "^2.0.0",
-    "snyk": "^1.1041.0"
+    "snyk": "^1.1064.0"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
