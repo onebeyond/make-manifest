@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/d7e1985d2a7e16964adc/maintainability)](https://codeclimate.com/github/onebeyond/make-manifest/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d7e1985d2a7e16964adc/test_coverage)](https://codeclimate.com/github/onebeyond/make-manifest/test_coverage)
+
 # make-manifest
 Generates a manfiest.json similar to...
 ```
