@@ -1,11 +1,21 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const _set = require('lodash.set');
 const path = require('path')
 
 const makeManifest = require('../');
 const pkg = require(path.join(process.cwd(), 'package.json'))
+
+const _set = (obj, path, value) => {
+  const keys = path.split('.');
+  let current = obj;
+  for (let i = 0; i < keys.length - 1; i++) {
+    current[keys[i]] = current[keys[i]] || {};
+    current = current[keys[i]];
+  }
+  current[keys[keys.length - 1]] = value;
+  return obj;
+}
 
 const collect = (value, memo) => {
   const [key, ...rest] = value.split(':');

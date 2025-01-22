@@ -1,6 +1,6 @@
 {
   "name": "make-manifest",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Writes a manifest.json using package.json, github commit shas and command line options",
   "main": "index.js",
   "engineStrict": true,
@@ -39,7 +39,6 @@
   "dependencies": {
     "commander": "^9.4.1",
     "git-rev-sync": "^3.0.2",
-    "lodash.set": "^4.3.2",
     "remote-origin-url": "^2.0.0",
     "snyk": "^1.1041.0"
   },
